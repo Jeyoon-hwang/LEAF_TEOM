@@ -5,7 +5,7 @@ from matplotlib.lines import lineStyles
 from sklearn.metrics import r2_score
 from scipy.stats import pearsonr
 import matplotlib.pyplot as plt
-from calibrataion import leaf_vibration_model
+from calibrataion_diff import get_pm_weight_normalized
 import requests
 import json
 import os
