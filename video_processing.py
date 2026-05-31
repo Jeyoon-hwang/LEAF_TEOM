@@ -25,13 +25,14 @@ def get_roi_by_select(video_path):
 
     return roi_x, roi_y, roi_w, roi_h
 
-def extract_leaf_position (video_path, roi):
-    roi_x, roi_y, roi_w, roi_h = roi
+
+def extract_leaf_position(video_path, roi_x, roi_y, roi_w, roi_h):
+    roi = (roi_x, roi_y, roi_w, roi_h)
     debug = False
     cap = cv2.VideoCapture(video_path)
     fps = cap.get(cv2.CAP_PROP_FPS)
 
-    success,first_frame = cap.read()
+    success, first_frame = cap.read()
     if not success:
         return None
     first_gray = cv2.cvtColor(first_frame, cv2.COLOR_BGR2GRAY)
