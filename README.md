@@ -34,17 +34,8 @@ LEAF_TEOM은 EPA가 인증한 **TEOM(Tapered Element Oscillating Microbalance)**
 ### 핵심 아이디어
 
 캔틸레버 빔의 고유진동수:
-
-$$
-f = \frac{1}{2\pi}\sqrt{\frac{k}{m}}
-$$
-
 PM이 잎에 침착되면 질량 m이 증가 → 고유진동수 f 감소.
-정규화 차분 측정:
 
-$$
-\frac{\Delta f}{f} = -\frac{1}{2}\frac{\Delta m}{m}
-$$
 
 ---
 
