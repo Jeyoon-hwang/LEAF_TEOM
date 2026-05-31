@@ -1,7 +1,6 @@
 #%%
 import cv2
 import numpy as np
-from numpy.ma.core import masked
 
 
 def get_roi_by_select(video_path):
@@ -26,7 +25,8 @@ def get_roi_by_select(video_path):
 
     return roi_x, roi_y, roi_w, roi_h
 
-def extract_leaf_position (video_path, roi_x, roi_y, roi_w, roi_h):
+def extract_leaf_position (video_path, roi):
+    roi_x, roi_y, roi_w, roi_h = roi
     debug = False
     cap = cv2.VideoCapture(video_path)
     fps = cap.get(cv2.CAP_PROP_FPS)
